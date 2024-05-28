@@ -1,0 +1,58 @@
+.work {
+  color: white;
+  margin-top: 2.26rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.work_down {
+  margin-top: 6rem;
+}
+
+.work_heading {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-family: "CabinetGrotesk-Extrabold";
+}
+
+.work_samples {
+  gap: 1.8rem;
+}
+
+.work_container {
+  background-color: #050e2c;
+}
+.work_para {
+  padding: 8px 30px;
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 1.2rem;
+}
+
+.work_down {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 720px) {
+  .work_heading {
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+
+  .work_samples {
+    flex-direction: column;
+  }
+  .work_para {
+    display: none;
+  }
+
+  .work_container {
+    background-color: black;
+  }
+  .work_samples {
+    gap: 2.5rem;
+  }
+  .work_down {
+    margin-bottom: 1.4rem;
+    margin-top: 2.5rem;
+  }
+}

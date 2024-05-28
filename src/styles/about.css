@@ -1,0 +1,137 @@
+.big_container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+  color: white;
+  margin-bottom: 7rem;
+  background-color: rgba(51, 49, 49, 0.205);
+}
+
+.about_container {
+  color: white;
+  display: flex;
+  gap: 7rem;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+/* .about_words {
+  width: 50%;
+}
+
+.about_image {
+  width: 50%;
+} */
+
+.about_image > img {
+  border-radius: 5px;
+}
+
+.about_head {
+  font-size: 3rem;
+  font-family: "CabinetGrotesk-Extrabold";
+  margin-bottom: 2rem;
+}
+
+.about_para {
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 1.1rem;
+}
+
+.para1 {
+  font-family: "CabinetGrotesk-Extrabold";
+  margin-bottom: 1.1rem;
+}
+.para2 {
+  margin-bottom: 2rem;
+}
+.para3 {
+  margin-bottom: 2rem;
+}
+
+.about_buttons {
+  display: flex;
+  /* gap: 6rem; */
+}
+
+.btn {
+  padding: 12px 34px;
+  border-radius: 5px;
+  font-family: "CabinetGrotesk-Extrabold";
+  font-size: 1rem;
+}
+.btn_black {
+  color: white;
+  background-color: black;
+  margin-right: 6rem;
+}
+.btn_white {
+  color: black;
+  background-color: white;
+}
+
+.services_container {
+  display: flex;
+  gap: 8rem;
+  align-items: baseline;
+}
+.services_container_list {
+  display: flex;
+  gap: 4rem;
+}
+
+.services_container > h3 {
+  font-family: "CabinetGrotesk-Extrabold";
+  font-size: 3rem;
+}
+
+.services_option {
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 720px) {
+  .about_container {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .services_container > h3 {
+    font-size: 2rem;
+  }
+  .about_image {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .about_image > img {
+    border-radius: 0px;
+  }
+  .about_head {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .para1 {
+    font-family: "CabinetGrotesk-Extrabold";
+    margin-bottom: 0.8rem;
+  }
+  .para2 {
+    margin-bottom: 1.5rem;
+  }
+  .para3 {
+    margin-bottom: 2rem;
+  }
+  .about_buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services_container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

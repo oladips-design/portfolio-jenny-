@@ -1,0 +1,46 @@
+/* @import url("./cabinet-grotesk.css"); */
+.hero {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "CabinetGrotesk-Extrabold";
+  margin-top: 2rem;
+  color: white;
+  border-bottom: 0.2px solid #757070;
+}
+
+.hero_name {
+  font-size: 1.5rem;
+}
+.hero_main {
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.hero_fade {
+  color: #757070;
+}
+.hero_block {
+  display: block;
+}
+.hero_para {
+  font-family: "CabinetGrotesk-Regular";
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 720px) {
+  .hero_name {
+    font-size: 1rem; /* 16px */
+  }
+
+  .hero_main {
+    font-size: 1.5rem; /* 24px */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero_para {
+    font-size: 0.75rem; /* 12px */
+    margin-bottom: 1.5rem;
+  }
+}

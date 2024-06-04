@@ -6,24 +6,21 @@ import Strengths from "./components/Strengths";
 import Work from "./components/Work";
 import bgImg from "./assets/unsplash_ek7Y_iOl3UQ(2).png";
 import "./App.css";
+import Contact from "./components/Contact";
 function App() {
   return (
     <>
       <div className="main">
-        <div className="bg_group">
-          <img src={bgImg} className="bg" />
-          <img src={bgImg} className="bg" />
-          <img src={bgImg} className="bg" />
-        </div>
-
+        <img src={bgImg} className="bg" />
         <Navbar />
         <Hero />
         <Work />
         <About />
         <div className="bg_container">
+          <img src={bgImg} className="bg" />
           <Strengths />
           <Experience />
-          <img src={bgImg} className="bg" />
+          <Contact />
         </div>
       </div>
     </>

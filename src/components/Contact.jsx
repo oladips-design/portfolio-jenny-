@@ -24,6 +24,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <h2 className="bye">THANK YOU FOR STOPPING BY!</h2>
     </>
   );
 }

@@ -2,5 +2,57 @@
   color: white;
   margin: 0 2rem;
   display: flex;
-  gap: 4rem;
+  gap: 9rem;
+  margin-bottom: 25rem;
+}
+
+.contact_heading {
+  font-family: "CabinetGrotesk-Extrabold";
+  font-size: 3rem;
+}
+
+.contact_bigbox {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.contact_mess {
+  font-family: "CabinetGrotesk-Regular";
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.4rem;
+}
+
+.contact1 {
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 1.2rem;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.para {
+  font-family: "CabinetGrotesk-Regular";
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.contact_socials {
+  font-family: "CabinetGrotesk-Extrabold";
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.contact_socials > a {
+  text-decoration: underline;
+}
+
+.bye {
+  font-family: "CabinetGrotesk-Extrabold";
+  font-size: 4.5rem;
+  text-align: center;
+  color: #757070;
 }

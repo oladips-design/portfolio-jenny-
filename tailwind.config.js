@@ -48,6 +48,12 @@ const config = {
       "4xl": "2560px",
     },
     extend: {
+      transitionProperty: {
+        width: "width",
+      },
+      transitionDuration: {
+        1000: "1000ms",
+      },
       // fontFamily: {
       //   avenirNext: ["var(--avenirNext-font)", ...fontFamily.sans],
       //   adobeClean: ["var(--adobeClean-font)", ...fontFamily.sans],

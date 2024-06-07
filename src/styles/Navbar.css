@@ -1,3 +1,42 @@
 .link-text {
   color: #919191;
 }
+
+.mobile_div {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.mobile_container {
+  background: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 27px;
+}
+
+/* styles/Navbar.css */
+.link-text {
+  position: relative;
+}
+
+.link-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 1s ease-in-out;
+}
+
+.link-text:hover::after {
+  width: 100%;
+}

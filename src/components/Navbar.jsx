@@ -33,9 +33,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black relative">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 mobile_outer">
           <div className="flex items-center md:visible invisible">
             <a href="/" className="text-white">
               Portfolio
@@ -68,13 +68,13 @@ const Navbar = () => {
         </div>
       </div>
       {open ? (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden mobile_div">
+          <div className="px-10 pt-10 pb-11 space-y-1 sm:px-3  mobile_container">
             {navLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.link}
-                className="text-gray-600 hover:text-black block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-600 hover:text-black link-text block px-3 py-2 rounded-md text-base font-medium"
               >
                 {link.title}
               </a>

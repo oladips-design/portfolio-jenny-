@@ -15,7 +15,10 @@ export default function Work() {
 
         <div className="work_samples flex">
           <div className="work_container">
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.behance.net/gallery/172036611/Mealy"
+            >
               <div className="work_image">
                 <img src={workImage1} alt="" />
               </div>
@@ -27,7 +30,10 @@ export default function Work() {
             </p>
           </div>
           <div className="work_container">
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.behance.net/gallery/198643173/Zimlora-Fashion-Website"
+            >
               <div className="work_image">
                 <img src={workImage2} alt="" />
               </div>
@@ -41,7 +47,10 @@ export default function Work() {
         </div>
         <div className="work_samples flex work_down">
           <div className="work_container">
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.behance.net/gallery/191910287/Software-Agency-Website"
+            >
               <div className="work_image">
                 <img src={workImage3} alt="" />
               </div>
@@ -53,7 +62,10 @@ export default function Work() {
             </p>
           </div>
           <div className="work_container">
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.behance.net/gallery/188316599/Avid-Reader-Website"
+            >
               <div className="work_image">
                 <img src={workImage4} alt="" />
               </div>

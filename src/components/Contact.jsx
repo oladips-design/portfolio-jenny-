@@ -3,7 +3,7 @@ import "../styles/contact.css";
 export default function Contact() {
   return (
     <>
-      <div className="contact_container">
+      <div className="contact_container" id="contact">
         <h3 className="contact_heading">Contact</h3>
         <div className="contact_bigbox">
           <p className="contact_mess">
@@ -12,8 +12,8 @@ export default function Contact() {
             stay informed, you can also connect with me on social media,
           </p>
           <div className="contact1">
-            <p>Email:</p>
-            <p>whatsapp:</p>
+            <p>Email: Jeniferanieke@gmail.com</p>
+            <p>X: @cherieammy</p>
           </div>
           <p className="para">Lets connect</p>
           <div className="contact_socials">

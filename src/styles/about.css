@@ -134,4 +134,8 @@
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  .btn {
+    font-size: 0.8rem;
+  }
 }

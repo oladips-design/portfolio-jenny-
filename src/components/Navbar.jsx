@@ -6,23 +6,23 @@ const Navbar = () => {
   const navLinks = [
     {
       title: "Resume",
-      link: "/resume",
+      link: "#resume",
     },
     {
       title: "Work",
-      link: "/work",
+      link: "#works",
     },
     {
       title: "About",
-      link: "/about",
+      link: "#about",
     },
     {
       title: "Service",
-      link: "/service",
+      link: "#service",
     },
     {
       title: "Contact",
-      link: "/contact",
+      link: "#contact",
     },
   ];
 

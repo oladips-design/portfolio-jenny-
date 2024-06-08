@@ -56,3 +56,36 @@
   text-align: center;
   color: #757070;
 }
+
+@media (max-width: 480px) {
+  .contact_heading {
+    font-size: 2rem;
+  }
+
+  .contact_container {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .contact_bigbox {
+    width: 100%;
+  }
+  .contact_mess {
+    font-size: 0.9rem;
+    line-height: 2.4rem;
+  }
+
+  .contact1 {
+    flex-direction: column;
+    width: 55%;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .bye {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+  }
+}

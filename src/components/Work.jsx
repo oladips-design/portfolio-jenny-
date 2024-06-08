@@ -7,7 +7,7 @@ import workImage4 from "../assets/Frame 49279 1(1).png";
 export default function Work() {
   return (
     <>
-      <section className="work">
+      <section className="work" id="works">
         <div className="work_heading flex justify-between">
           <h4>SELECTED WORKS</h4>
           <h4>(2023 - 2024)</h4>
@@ -15,9 +15,11 @@ export default function Work() {
 
         <div className="work_samples flex">
           <div className="work_container">
-            <div className="work_image">
-              <img src={workImage1} alt="" />
-            </div>
+            <a href="">
+              <div className="work_image">
+                <img src={workImage1} alt="" />
+              </div>
+            </a>
             <p className="work_para">
               Mealy is a mobile application for ordering food and drink online.
               It provides convenience and efficient way for customers to order
@@ -25,9 +27,11 @@ export default function Work() {
             </p>
           </div>
           <div className="work_container">
-            <div className="work_image">
-              <img src={workImage2} alt="" />
-            </div>
+            <a href="">
+              <div className="work_image">
+                <img src={workImage2} alt="" />
+              </div>
+            </a>
             <p className="work_para">
               The Zim.lora project aimed to enhance the user experience and
               ensure a simple and seamless user purchase of fashion iteams on
@@ -37,9 +41,11 @@ export default function Work() {
         </div>
         <div className="work_samples flex work_down">
           <div className="work_container">
-            <div className="work_image">
-              <img src={workImage3} alt="" />
-            </div>
+            <a href="">
+              <div className="work_image">
+                <img src={workImage3} alt="" />
+              </div>
+            </a>
             <p className="work_para">
               Quox is a software development company website, that provide
               cutting-edge solutions, expert insights, and a collaborative
@@ -47,9 +53,11 @@ export default function Work() {
             </p>
           </div>
           <div className="work_container">
-            <div className="work_image">
-              <img src={workImage4} alt="" />
-            </div>
+            <a href="">
+              <div className="work_image">
+                <img src={workImage4} alt="" />
+              </div>
+            </a>
             <p className="work_para">
               Avid Reader is a book store website where users can access various
               kinds of books. In addition,users can get book recommendations and

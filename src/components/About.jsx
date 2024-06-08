@@ -4,7 +4,7 @@ import bigPicture from "../assets/WhatsApp Image 2023-05-29 at 12.25 1.png";
 export default function About() {
   return (
     <>
-      <div className="big_container">
+      <div id="about" className="big_container">
         <div className="about_container">
           <div className="about_words">
             <h5 className="about_head">About me</h5>
@@ -38,7 +38,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="services_container">
+        <div className="services_container" id="service">
           <h3>Services</h3>
           <div className="services_container_list">
             <ul className="services_option option1">

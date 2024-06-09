@@ -17,10 +17,21 @@ export default function Contact() {
           </div>
           <p className="para">Lets connect</p>
           <div className="contact_socials">
-            <a href="">X</a>
-            <a href="">Behance</a>
-            <a href="">Linkedin</a>
-            <a href="">Email</a>
+            <a target="_blank" href="https://x.com/cherieammy">
+              X
+            </a>
+            <a target="_blank" href="https://www.behance.net/jenniferaniekeC">
+              Behance
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/jennifer-anieke/"
+            >
+              Linkedin
+            </a>
+            <a target="_blank" href="jeniferanieke@gmail.com">
+              Email
+            </a>
           </div>
         </div>
       </div>

@@ -40,3 +40,10 @@
 .link-text:hover::after {
   width: 100%;
 }
+
+@media (max-width: 480px) {
+  .stay {
+    position: sticky;
+    top: 0;
+  }
+}

@@ -1,28 +1,17 @@
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Strengths from "./components/Strengths";
-import Work from "./components/Work";
-import bgImg from "./assets/unsplash_ek7Y_iOl3UQ(2).png";
 import "./App.css";
-import Contact from "./components/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import GetInTouch from "./pages/GetInTouch";
+
 function App() {
   return (
     <>
-      <div className="main">
-        <img src={bgImg} className="bg" />
-        <Navbar />
-        <Hero />
-        <Work />
-        <About />
-        <div className="bg_container">
-          <img src={bgImg} className="bg" />
-          <Strengths />
-          <Experience />
-          <Contact />
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" Component={HomePage} />
+          <Route path="/contact" Component={GetInTouch} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

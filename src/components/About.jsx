@@ -1,5 +1,6 @@
 import "../styles/about.css";
 import bigPicture from "../assets/WhatsApp Image 2023-05-29 at 12.25 1.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -29,8 +30,12 @@ export default function About() {
             </p>
 
             <div className="about_buttons">
-              <button className="btn btn_black">HIRE ME</button>
-              <button className="btn btn_white">LETS TALK</button>
+              <Link to="/contact">
+                <button className="btn btn_black">HIRE ME</button>
+              </Link>
+              <Link to="contact">
+                <button className="btn btn_white">LETS TALK</button>
+              </Link>
             </div>
           </div>
           <div className="about_image">

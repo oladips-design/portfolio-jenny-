@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import "../styles/getInTouch.css";
-// import Mailto from "react-mailto";
-import { useNavigate } from "react-router-dom";
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function GetInTouch() {
   const [formData, setFormData] = useState({
@@ -12,7 +11,7 @@ export default function GetInTouch() {
     message: "",
   });
 
-  const navigate = useNavigate();
+  const [state, handleSubmit] = useForm("mrbzvovj"); 
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -22,16 +21,20 @@ export default function GetInTouch() {
     }));
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    navigate("/");
-  };
-
-  // const mailtoParams = {
-  //   email: "oladeleoladipupo555@gmail.com",
-  //   subject: formData.subject,
-  //   body: `Full Name: ${formData.fullname}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
-  // };
+  if (state.succeeded) {
+    return (
+      <div>
+        <Navbar />
+        <div className="thank-you-container">
+          <img 
+            src="https://whitesellgroup.com/wp-content/uploads/2016/01/thank-you-for-reaching-out-to-us-.jpg"
+            alt="Thanks for reaching out" 
+            className="thank-you-image" // Apply custom styles to control the size and look of the image
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -49,6 +52,12 @@ export default function GetInTouch() {
                 placeholder="Enter full Name"
                 value={formData.fullname}
                 onChange={handleChange}
+                required
+              />
+              <ValidationError 
+                prefix="Fullname" 
+                field="fullname"
+                errors={state.errors}
               />
             </div>
             <div className="form-group">
@@ -60,6 +69,12 @@ export default function GetInTouch() {
                 placeholder="Enter email address"
                 value={formData.email}
                 onChange={handleChange}
+                required
+              />
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
               />
             </div>
             <div className="form-group">
@@ -71,6 +86,12 @@ export default function GetInTouch() {
                 placeholder="Enter subject"
                 value={formData.subject}
                 onChange={handleChange}
+                required
+              />
+              <ValidationError 
+                prefix="Subject" 
+                field="subject"
+                errors={state.errors}
               />
             </div>
             <div className="form-group">
@@ -81,15 +102,17 @@ export default function GetInTouch() {
                 placeholder="Enter message"
                 value={formData.message}
                 onChange={handleChange}
+                required
               ></textarea>
+              <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+              />
             </div>
-            <button type="submit">SUBMIT</button>
-            {/* <Mailto
-              email={mailtoParams.email}
-              subject={mailtoParams.subject}
-              body={mailtoParams.body}
-            >
-            </Mailto> */}
+            <button type="submit" disabled={state.submitting}>
+              {state.submitting ? "Submitting..." : "SUBMIT"}
+            </button>
           </form>
         </div>
       </div>
